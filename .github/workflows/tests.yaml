@@ -17,5 +17,7 @@ jobs:
         python-version: "3.12"
     - name: Install Poetry and dependencies
       run: pipx install poetry
+    - name: Install project dependencies
+      run: poetry install
     - name: Make build
       run: poetry run pytest
