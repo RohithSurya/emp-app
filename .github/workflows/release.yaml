@@ -42,7 +42,7 @@ jobs:
     name: Upload (PyPI)
     runs-on: ubuntu-latest
     environment:
-      name: emp-app
+      name: pypi
       url: https://pypi.org/project/emp-app/
     permissions:
       id-token: write
