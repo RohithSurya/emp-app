@@ -6,7 +6,7 @@ emp = [{"name": "emp1"}, {"name": "emp2"}]
 
 
 @app.route("/")
-def get_emp_data():
+def get_emp_da
     return emp
 
 
