@@ -6,9 +6,6 @@ on:
   pull_request:
     branches:
       main
-env: 
-  POETRY_HOME: ${{vars.POETRY_HOME}}
-  POETRY: ${{vars.POETRY}}
 jobs:
   make-build:
     runs-on: ubuntu-latest
