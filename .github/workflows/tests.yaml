@@ -1,4 +1,4 @@
-name: Make build
+name: Test
 on: 
   push:
     branches:
