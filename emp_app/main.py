@@ -12,4 +12,5 @@ def get_emp_data():
 
 @app.route("/<id>")
 def get_emp_data_id(id):
+    print(id)
     return emp[int(id)]
