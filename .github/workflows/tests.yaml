@@ -1,0 +1,23 @@
+name: Test
+on: 
+  push:
+    branches:
+      main
+  pull_request:
+    branches:
+      main
+jobs:
+  make-build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - name: Install python
+      uses: actions/setup-python@v5
+      with:
+        python-version: "3.12"
+    - name: Install Poetry and dependencies
+      run: pipx install poetry
+    - name: Install project dependencies
+      run: poetry install
+    - name: Make build
+      run: poetry run pytest
